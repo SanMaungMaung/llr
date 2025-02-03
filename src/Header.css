@@ -1,0 +1,38 @@
+/* Header.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    padding: 10px;
+    background-color: #f8f8f8; /* Optional: Add a background color */
+}
+
+.logo-container {
+    flex: 0 1 auto; /* Ensure the logo container sizes automatically */
+    margin-right: 20px; /* Add spacing between the logo and nav */
+}
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav-list {
+    display: flex; /* Display items in a row */
+    list-style-type: none; /* Remove default list style */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-right: 20px; /* Add spacing between links */
+}
+
+.nav-list li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+}
+
+.nav-list li a:hover {
+    color: #007bff; /* Optional: Change link color on hover */
+}

@@ -1,0 +1,59 @@
+/* Footer.css */
+.footer {
+    text-align: left;
+    padding: 5px;
+    background-color: #f8f8f8; /* Optional: Add a background color */
+    color: #333; /* Set text color */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start;
+    flex-wrap: nowrap; /* Ensure columns do not wrap to the next line */
+    margin-bottom: auto;
+    gap: 10px; /* Small gap between columns */
+}
+
+.footer-column {
+    flex: 0 1 auto; /* Ensure columns are flexible */
+    min-width: 150px; /* Adjust this value as needed to make the columns closer */
+    margin: 0; /* Remove margin between columns */
+    padding: 5px; /* Optional: Add padding to each column */
+}
+
+.footer-logo-img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-list,
+.footer-social-list {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li,
+.footer-social-list li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.footer-list li a,
+.footer-social-list li a img {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+}
+
+.footer-social-list li a img {
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-social-list li a:hover img {
+    filter: brightness(0.8); /* Optional: Change image brightness on hover */
+}
+
+.footer-text {
+    text-align: center;
+}

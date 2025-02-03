@@ -1,0 +1,25 @@
+/* Nav.css */
+.navbar {
+    background-color: #f8f8f8; /* Optional: Add a background color */
+    padding: 10px; /* Optional: Add some padding */
+}
+
+.nav-list {
+    list-style-type: none; /* Remove default list style */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display items in a row */
+}
+
+.nav-list li {
+    margin-right: 20px; /* Add spacing between links */
+}
+
+.nav-list li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+}
+
+.nav-list li a:hover {
+    color: #007bff; /* Optional: Change link color on hover */
+}

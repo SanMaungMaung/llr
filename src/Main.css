@@ -1,0 +1,68 @@
+/* Main.css */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    width: 100%;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the main container */
+    position: relative;
+}
+
+.intro {
+    width: 100%;
+    background-color: #4caf50; /* Green background color */
+    color: white; /* White text color */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between the items */
+    position: relative;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px; /* Set a fixed maximum width for the text column */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+.reserve-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4c542; /* Yellow button background color */
+    color: #333; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.image-container {
+    flex: 0 0 25%; /* Allow the image container to take up 25% of the container */
+    position: relative;
+    margin-left: 20px; /* Add a small gap between the text and image */
+}
+
+.food-image {
+    width: 100%; /* Adjust the width to take full container */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    right: -20px; /* Move the image beyond the container */
+    top: -130px; /* Move the image beyond the container */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.specials {
+    margin-top: 40px;
+    text-align: center;
+}
