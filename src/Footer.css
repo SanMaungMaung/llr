@@ -1,23 +1,29 @@
 /* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&family=Markazi+Text:wght@400;500&display=swap');
+
+* {
+    font-family: 'Karla', sans-serif;
+}
+
 .footer {
     text-align: left;
     padding: 5px;
-    background-color: #f8f8f8; /* Optional: Add a background color */
-    color: #333; /* Set text color */
+    background-color: #495E57; /* Updated background color */
+    color: #ffffff; /* Set text color to white */
 }
 
 .footer-container {
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: flex-start;
-    flex-wrap: nowrap; /* Ensure columns do not wrap to the next line */
+    flex-wrap: wrap; /* Ensure columns wrap to the next line */
     margin-bottom: auto;
     gap: 10px; /* Small gap between columns */
 }
 
 .footer-column {
     flex: 0 1 auto; /* Ensure columns are flexible */
-    min-width: 150px; /* Adjust this value as needed to make the columns closer */
+    min-width: 150px; /* Adjust this value as needed */
     margin: 0; /* Remove margin between columns */
     padding: 5px; /* Optional: Add padding to each column */
 }
@@ -42,7 +48,14 @@
 .footer-list li a,
 .footer-social-list li a img {
     text-decoration: none; /* Remove underline from links */
-    color: #333; /* Set link color */
+    color: #ffffff; /* Set link color to white */
+    font-family: 'Karla', sans-serif; /* Apply typeface */
+    font-weight: 500; /* Apply font weight */
+}
+
+.footer-list li a,
+.footer-social-list li a {
+    color: #f4ce14; /* Apply yellow color */
 }
 
 .footer-social-list li a img {
@@ -56,4 +69,24 @@
 
 .footer-text {
     text-align: center;
+    font-family: 'Karla', sans-serif; /* Apply typeface */
+    font-weight: 500; /* Apply font weight */
+    color: #ffffff; /* Set text color to white */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-wrap: wrap; /* Allow columns to wrap to the next line */
+        justify-content: center; /* Center the columns */
+    }
+
+    .footer-column {
+        flex: 0 0 100%; /* Full width for each column on smaller screens */
+        margin-bottom: 20px; /* Add spacing between columns vertically */
+    }
+
+    .footer-logo-img {
+        width: 100%; /* Adjust the width for smaller screens */
+    }
 }

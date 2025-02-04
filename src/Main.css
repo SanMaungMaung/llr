@@ -1,4 +1,19 @@
 /* Main.css */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&family=Markazi+Text:wght@400;500&display=swap');
+
+* {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .main-content {
     display: flex;
     align-items: center;
@@ -9,29 +24,64 @@
 
 .main-container {
     display: flex;
+    background-color: #495E57;
     align-items: center;
     justify-content: center; /* Center the content horizontally */
     width: 100%;
     max-width: 1200px; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the main container */
     position: relative;
+    padding: 0 20px; /* Add horizontal padding to the container */
 }
 
 .intro {
-    width: 100%;
-    background-color: #4caf50; /* Green background color */
+    width: 100%; /* Full width */
+    background-color: #495E57; /* Green background color */
     color: white; /* White text color */
-    padding: 20px;
+    padding: 20px 0; /* Vertical padding */
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribute space between the items */
+    justify-content: center; /* Center the content horizontally */
     position: relative;
+}
+
+.intro-container {
+    width: 100%; /* Ensure the container spans full width */
+    max-width: auto; /* Align with main-container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add horizontal padding to the container */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
 }
 
 .text-content {
     flex: 1;
-    max-width: 600px; /* Set a fixed maximum width for the text column */
+    max-width: 400px; /* Set a fixed maximum width for the text column */
     word-wrap: break-word; /* Ensure long words break to the next line */
+    margin-right: 1px; /* Add margin to move it closer to the center */
+    line-height: 1; /* Remove line spacing */
+}
+
+.text-content h1 {
+    font-family: 'Markazi Text', serif;
+    font-size: 64pt;
+    font-weight: 500;
+    color: #f4ce14; /* Apply yellow color */
+}
+
+.text-content h2 {
+    font-family: 'Markazi Text', serif;
+    font-size: 40pt;
+    font-weight: 400;
+}
+
+.text-content p {
+    font-family: 'Karla', sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+    line-height: 1; /* Remove line spacing */
+    max-width: 65ch;
 }
 
 .reserve-button {
@@ -48,21 +98,57 @@
 }
 
 .image-container {
-    flex: 0 0 25%; /* Allow the image container to take up 25% of the container */
+    flex: 0 0 300px; /* Set a fixed width for the image container */
     position: relative;
-    margin-left: 20px; /* Add a small gap between the text and image */
+    margin-left: 10px; /* Reduce margin to move it closer to the center */
 }
 
 .food-image {
     width: 100%; /* Adjust the width to take full container */
     height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: 5px solid white; /* Add a white border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Add a drop shadow */
+    border-radius: 15px; /* Add rounded corners */
     position: absolute;
     right: -20px; /* Move the image beyond the container */
-    top: -130px; /* Move the image beyond the container */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
+    top: -50px; /* Move the image vertically up */
+    transform: translateY(-20%); /* Extend the image vertically */
 }
 
 .specials {
+    font-family: 'Karla', sans-serif;
+    font-size: 20pt;
+    font-weight: 800;
+    text-transform: uppercase;
     margin-top: 40px;
     text-align: center;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .intro-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .image-container {
+        flex: 0 0 100%; /* Full width for the image container on smaller screens */
+        margin-left: 0; /* Remove the left margin */
+        margin-top: 20px; /* Add top margin for spacing */
+    }
+
+    .food-image {
+        position: static; /* Change position to static */
+        right: 0;
+        top: 0;
+        width: 100%; /* Full width for the image */
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        transform: none; /* Reset the transform property */
+    }
 }

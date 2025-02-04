@@ -1,4 +1,10 @@
 /* Nav.css */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&family=Markazi+Text:wght@400;500&display=swap');
+
+* {
+    font-family: 'Karla', sans-serif;
+}
+
 .navbar {
     background-color: #f8f8f8; /* Optional: Add a background color */
     padding: 10px; /* Optional: Add some padding */
@@ -18,8 +24,22 @@
 .nav-list li a {
     text-decoration: none; /* Remove underline from links */
     color: #333; /* Set link color */
+    font-family: 'Karla', sans-serif; /* Apply typeface */
+    font-weight: 500; /* Apply font weight */
 }
 
 .nav-list li a:hover {
     color: #007bff; /* Optional: Change link color on hover */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center the items */
+    }
+
+    .nav-list li {
+        margin-bottom: 10px; /* Add spacing between links vertically */
+    }
 }
