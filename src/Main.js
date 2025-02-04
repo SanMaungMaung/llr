@@ -9,6 +9,9 @@ import profilePic1 from './img/profile-pic-1.jpg'; // Import profile pictures fo
 import profilePic2 from './img/profile-pic-2.jpg';
 import profilePic3 from './img/profile-pic-3.jpg';
 import profilePic4 from './img/profile-pic-4.jpg';
+import chefImage from './img/chef.jpg'; // Import about section images
+import outdoorImage from './img/restaurant.jpg';
+import bicycleIcon from './img/bicycle.svg'; // Import the bicycle icon
 
 function Main() {
     return (
@@ -17,7 +20,7 @@ function Main() {
                 <section className="intro">
                     <div className="text-content">
                         <h1>Little Lemon</h1>
-                        <h2>Chicago</h2>
+                        <h2>Chicago</h2> {/* Add Chicago here */}
                         <p>We are a family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist.</p>
                         <button className="reserve-button">Reserve a Table</button>
                     </div>
@@ -35,17 +38,20 @@ function Main() {
                     <div className="special-card">
                         <img src={greekSalad} alt="Greek Salad" className="special-image" />
                         <div className="special-content">
-                            <h3>Greek Salad - $12.99</h3>
-                            <p>The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
-                            <button className="order-button">Order a delivery</button>
-                        </div>
+                         <div className="special-title">
+                            <h3>Greek Salad</h3>
+                             <h4>$12.99</h4>
+                         </div>
+                             <p>The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
+                             <a href="/home">Order a Delivery<img src={bicycleIcon} alt="Order a Delivery" /></a>
+                    </div>
                     </div>
                     <div className="special-card">
                         <img src={bruschetta} alt="Bruschetta" className="special-image" />
                         <div className="special-content">
                             <h3>Bruschetta - $5.99</h3>
                             <p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
-                            <button className="order-button">Order a delivery</button>
+                            <a href="/home">Order a Delivery<img src={bicycleIcon} alt="Order a Delivery" /></a>
                         </div>
                     </div>
                     <div className="special-card">
@@ -53,7 +59,7 @@ function Main() {
                         <div className="special-content">
                             <h3>Lemon Dessert - $5.00</h3>
                             <p>This comes straight from grandma's recipe book; every last ingredient has been sourced and is as authentic as can be imagined.</p>
-                            <button className="order-button">Order a delivery</button>
+                            <a href="/home">Order a Delivery<img src={bicycleIcon} alt="Order a Delivery" /></a>
                         </div>
                     </div>
                 </div>
@@ -105,6 +111,20 @@ function Main() {
                         </div>
                         <p className="review-text">"The pizza was delicious, with just the right amount of cheese and amazing toppings."</p>
                     </div>
+                </div>
+            </section>
+            <section className="about">
+                <div className="text-content">
+                    <h1>Little Lemon</h1>
+                    <h2>Chicago</h2> {/* Add Chicago here */}
+                    <p>
+                        Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails 
+                        in a lively but casual environment. We offer a locally-sourced menu with daily specials.
+                    </p>
+                </div>
+                <div className="image-container">
+                    <img src={chefImage} alt="Chef" />
+                    <img src={outdoorImage} alt="Restaurant" />
                 </div>
             </section>
         </main>

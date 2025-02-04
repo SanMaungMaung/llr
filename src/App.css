@@ -1,4 +1,5 @@
 .logo {
   width: 100px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
+  font-family: 'Karla', sans-serif;
 }

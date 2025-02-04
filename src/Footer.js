@@ -1,6 +1,8 @@
-// Footer.js
 import React from 'react';
 import logo from './img/logo2.svg';
+import facebookIcon from './img/facebook.svg';
+import instagramIcon from './img/instagram.svg';
+import twitterIcon from './img/twitter.svg';
 import './Footer.css'; // Ensure this CSS file is included
 
 function Footer() {
@@ -32,16 +34,15 @@ function Footer() {
                 <div className="footer-column">
                     <h4>Social Media</h4>
                     <ul className="footer-social-list">
-                        <li><a href="https://www.facebook.com"><img src="/img/facebook.png" alt="Facebook" /></a></li>
-                        <li><a href="https://www.instagram.com"><img src="/img/instagram.png" alt="Instagram" /></a></li>
-                        <li><a href="https://www.twitter.com"><img src="/img/twitter.png" alt="Twitter" /></a></li>
+                        <li><a href="https://www.facebook.com"><img src={facebookIcon} alt="Facebook" />Facebook</a></li>
+                        <li><a href="https://www.instagram.com"><img src={instagramIcon} alt="Instagram" />Instagram</a></li>
+                        <li><a href="https://www.twitter.com"><img src={twitterIcon} alt="Twitter" />Twitter</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-text">
+            <div className="footer-text">
                 <p>&copy; 2025 Little Lemon. All rights reserved.</p>
-
-                </div>
+            </div>
         </footer>
     );
 }

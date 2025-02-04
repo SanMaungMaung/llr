@@ -19,30 +19,8 @@
 }
 
 .logo {
-    width: 100px; /* Adjust the width as needed */
+    width: 200px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
-}
-
-.nav-list {
-    display: flex; /* Display items in a row */
-    list-style-type: none; /* Remove default list style */
-    margin: 0;
-    padding: 0;
-}
-
-.nav-list li {
-    margin-right: 20px; /* Add spacing between links */
-}
-
-.nav-list li a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Set link color */
-    font-family: 'Karla', sans-serif; /* Apply typeface */
-    font-weight: 500; /* Apply font weight */
-}
-
-.nav-list li a:hover {
-    color: #007bff; /* Optional: Change link color on hover */
 }
 
 /* Responsive Design for Mobile */
