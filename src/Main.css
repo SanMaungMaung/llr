@@ -14,17 +14,23 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 .main-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
+    width: 100%;
+    background-color: #495E57; /* Ensure background color is white */
 }
 
 .main-container {
     display: flex;
-    background-color: #495E57;
     align-items: center;
     justify-content: center; /* Center the content horizontally */
     width: 100%;
@@ -36,7 +42,6 @@ body {
 
 .intro {
     width: 100%; /* Full width */
-    background-color: #495E57; /* Green background color */
     color: white; /* White text color */
     padding: 20px 0; /* Vertical padding */
     display: flex;
@@ -112,18 +117,206 @@ body {
     border-radius: 15px; /* Add rounded corners */
     position: absolute;
     right: -20px; /* Move the image beyond the container */
-    top: -50px; /* Move the image vertically up */
+    top: -70px; /* Move the image vertically up */
     transform: translateY(-20%); /* Extend the image vertically */
 }
 
+/* Specials Section */
 .specials {
-    font-family: 'Karla', sans-serif;
-    font-size: 20pt;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-top: 40px;
+    width: 110%;
+    padding: 40px 0;
+    background-color: #fff; /* White background color */
+}
+
+.specials-header {
+    display: flex;
+    justify-content: center; /* Center the elements horizontally */
+    align-items: center;
+    margin-bottom: 20px;
     text-align: center;
 }
+
+.specials-header h2 {
+    font-size: 32pt;
+    font-weight: 800;
+    color: #333; /* Main title color */
+    margin-right: 20px; /* Add some space between the title and the button */
+}
+
+.online-menu-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4ce14; /* Yellow button background color */
+    color: #333; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.specials-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap;
+    gap: 10px; /* Remove the gap between each card */
+    width: 100%;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the specials container */
+    background-color: #fff; /* White background color */
+    color: #333; /* Text color */
+}
+
+.special-card {
+    background-color: #f0f0f0; /* Gray background color */
+    color: #333;
+    border-radius: 10px;
+    border: 1px solid #ddd; /* Add border to the card */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px; /* Adjust the width of each card */
+    margin: 0; /* Remove the margin between the cards */
+    transition: box-shadow 0.3s ease; /* Add transition for smooth shadow effect */
+}
+
+.special-card:hover, .special-card:focus {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect on hover and focus */
+}
+
+.special-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.special-content {
+    text-align: center;
+}
+
+.special-content h3 {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #333; /* Title color */
+}
+
+.special-content p {
+    font-size: 14pt;
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: justify; /* Ensure text is wrapped and justified */
+}
+
+.order-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4c542; /* Yellow button background color */
+    color: #333; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.reviews {
+    width: 100%;
+    height: 450px;
+    padding: 40px 0;
+    background-color: #495E57; /* Background color */
+    color: white; /* Text color */
+}
+
+.reviews-title {
+    font-family: 'Markazi Text', serif;
+    font-size: 64pt;
+    font-weight: 500;
+    color: #F4CE14; /* Yellow color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap;
+    gap: 10; /* Remove the gap between each review card */
+    width: 100%;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the reviews container */
+}
+
+.review-card {
+    background-color: #fff; /* White background color */
+    color: #333;
+    border-radius: 10px;
+    border: 1px solid #ddd; /* Add border to the card */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 210px; /* Reduce the width slightly to bring cards closer horizontally */
+    height: 175px; /* Fixed height */
+    margin: 10px; /* Use horizontal margin to pull the cards closer together */
+    transition: height 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth height and shadow effect */
+}
+
+.review-card:hover, .review-card:focus {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect on hover and focus */
+    height: auto; /* Expand height on hover to show full review text */
+}
+
+.review-rating {
+    font-size: 18pt;
+    color: #f4ce14; /* Yellow color for ratings */
+}
+
+.review-header {
+    display: flex;
+    align-items: center; /* Align items side by side */
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 30px; /* Ensure the width is 30px */
+    height: 30px; /* Ensure the height is 30px */
+    border-radius: 50%; /* Circular profile picture */
+    margin-right: 10px; /* Add space between profile picture and text */
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-name {
+    font-size: 16px; /* Adjust the font size of the username */
+}
+
+.review-count {
+    font-size: 10px; /* Adjust the font size of the number of reviews */
+    color: #EE9972; /* Color for the number of reviews */
+}
+
+.review-text {
+    font-size: 11pt;
+    color: #333; /* Text color */
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Show 3 lines of text */
+    overflow: ellipsis; /* Add ellipsis for overflow text */
+    transition: -webkit-line-clamp 0.3s ease; /* Smooth transition for line clamping */
+}
+
+.review-card:hover .review-text {
+    -webkit-line-clamp: unset; /* Remove line clamping on hover */
+}
+
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
@@ -150,5 +343,39 @@ body {
         margin-left: 0;
         margin-top: 0;
         transform: none; /* Reset the transform property */
+    }
+
+    .specials-header {
+        flex-direction: column; /* Stack header elements vertically on smaller screens */
+    }
+
+    .specials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .special-card {
+        max-width: 100%; /* Full width for each card on smaller screens */
+    }
+
+    .special-content h3 {
+        font-size: 20pt;
+    }
+
+    .special-content p {
+        font-size: 12pt;
+    }
+    .reviews-container {
+        flex-direction: column; /* Stack review cards vertically on smaller screens */
+        align-items: center;
+    }
+
+    .review-card {
+        max-width: 100%; /* Full width for each review card on smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .review-text {
+        font-size: 12pt; /* Smaller font size for review text on mobile */
     }
 }
