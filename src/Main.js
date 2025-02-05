@@ -49,7 +49,10 @@ function Main() {
                     <div className="special-card">
                         <img src={bruschetta} alt="Bruschetta" className="special-image" />
                         <div className="special-content">
-                            <h3>Bruschetta - $5.99</h3>
+                         <div className="special-title">
+                            <h3>Bruschetta</h3>
+                            <h4>$5.99</h4>
+                            </div>
                             <p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
                             <a href="/home">Order a Delivery<img src={bicycleIcon} alt="Order a Delivery" /></a>
                         </div>
@@ -57,7 +60,10 @@ function Main() {
                     <div className="special-card">
                         <img src={lemonDessert} alt="Lemon Dessert" className="special-image" />
                         <div className="special-content">
-                            <h3>Lemon Dessert - $5.00</h3>
+                         <div className="special-title">
+                            <h3>Lemon Dessert</h3>
+                            <h4>$7.99</h4>
+                            </div>
                             <p>This comes straight from grandma's recipe book; every last ingredient has been sourced and is as authentic as can be imagined.</p>
                             <a href="/home">Order a Delivery<img src={bicycleIcon} alt="Order a Delivery" /></a>
                         </div>
